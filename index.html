@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <title>Major Assignment Three</title>
+    <link rel = "stylesheet" href = "style/style.css">
+    <meta name = "viewport" content = "width-device-width, initial-scale = 1.0">
+</head>
+
+<!-- title at top -->
+<body>
+    <header class = "header">
+        <h1 class = "title"> Journey to UCF </h1>
+        <p class = "description"> Mark Pido </p>
+    </header>
+
+    <!-- background img -->
+    <div class = "bg-image"></div>
+
+    <!-- images for slideshow -->
+    <section class = "slideshow" style = "max-width:500px">
+        <img class = "mySlides" src = "assets/1.jpg" style = "width: 100%">
+        <img class = "mySlides" src = "assets/2.jpg" style = "width: 100%">
+        <img class = "mySlides" src = "assets/3.jpg" style = "width: 100%">
+        <img class = "mySlides" src = "assets/4.jpg" style = "width: 100%">
+    </section>
+
+    <!-- script for slideshow -->
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+    <section class = "here">
+        <h2> How did I get here? </h2>
+        <p>
+            Being raised in Tampa most of my life, I didn't consider moving to Orlando and
+            attending UCF as a possibility. While I did get accepted during the application
+            process, my first choice was USF due to money purposes. However, my brother wanted
+            to go to UCF as a music major, and events leaded up to me following him and transferring
+            to UCF.
+        </p>
+        <hr />
+    </section>
+
+    <section class = "decisions">
+        <h2> Decisions </h2>
+        <p>
+            I started UCF a little ahead in credits due to taking college courses in high school,
+            I honestly didn't really know what I wanted to major in so I had less time to think
+            about what to major in while I complete my general courses. Growing up using technology
+            my whole life, I figured it would make sense to major in either IT or Computer Science,
+            something that pays well and could be considered a stable career if I were to stick
+            with it in the long run.
+        </p>
+        <hr />
+    </section>
+
+    <section class = "it-compsci">
+        <h2> IT/Computer Science </h2>
+        <p>
+           Graduating high school in 2020, I was apart of the many students who started their college
+           journey online during COVID. Starting as an IT major, I thought the classes were a little
+           tough, even as beginner coding classes, but having little coding experience, I thought it
+           was pretty tough. I don't think having classes via Zoom helped a lot, as I couldn't learn
+           too much. There was a sudden switch throughout this time period where I thought majoring in
+           Computer Science rather than IT would be better for me in the future, so I decided to switch
+           majors. This is when I was finally able to attend classes in-person, and while I did manage
+           to get by as an IT major, I realized Computer Science is a lot more rigorous in terms of work
+           load and decided it didn't fit my lifestyle nor click in general.
+        </p>
+        <hr />
+    </section>
+
+    <section class = "digital-media">
+        <h2> Digital Media </h2>
+        <p>
+            Moving into 2022, I finally switched my major to Digital Media on the web design track. For
+            context, I always loved to do anything related to design; doing some research, I found
+            that interface design really interested me, so I decided to pursue this major instead. While
+            I'm not too deep into the track, I definitely found that learning web design was more interesting
+            and something I found enjoyable and satisfying.
+        </p>
+        <hr />
+    </section>
+
+    <section class = "whats-next">
+        <h2> What's next </h2>
+        <p>
+             The journey so far has been a lot of ups and downs, I hoped to graduate within a certain time frame,
+             but ultimately realized it's a lot better to take your time to find and learn something more
+             enjoyable and can consider a career in the future. I'm hoping to stick through with the major
+             and find an interface design job.
+        </p>
+        <hr />
+    </section>
+
+</body>
+
+</html>
